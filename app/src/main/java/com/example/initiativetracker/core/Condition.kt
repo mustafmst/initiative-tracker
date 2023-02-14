@@ -1,4 +1,4 @@
-package com.example.testing.core
+package com.example.initiativetracker.core
 
 class Condition(val name: String, val description: String, roundCounter: Int?) {
     var roundsLeft: Int = roundCounter ?: 9999

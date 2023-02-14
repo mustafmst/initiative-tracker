@@ -1,4 +1,4 @@
-package com.example.testing.ui.theme
+package com.example.initiativetracker.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.testing'
+    namespace 'com.example.initiativetracker'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.testing"
+        applicationId "com.example.initiativetracker"
         minSdk 24
         targetSdk 33
         versionCode 1
