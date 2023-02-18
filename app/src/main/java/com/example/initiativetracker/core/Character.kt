@@ -3,9 +3,15 @@ package com.example.initiativetracker.core
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.material.Button
+import androidx.compose.material.Icon
 import androidx.compose.material.Text
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.rounded.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import java.util.LinkedList
 import kotlin.random.Random
 
@@ -40,7 +46,17 @@ open class Character(val name: String, val modifier: Int = 0, val dice: Int = 20
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
             Text(text = name)
+            Button(onClick = { rollForInitiative() }) {
+                Icon(imageVector = Icons.Rounded.Refresh, contentDescription = null)
+            }
             Text(text = "$initiative")
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun CharacterTabPreview() {
+    val character = Character("test")
+    character.DisplayCharacter()
 }
